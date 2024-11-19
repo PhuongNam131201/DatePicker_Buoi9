@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/clock"
+        android:title="Alarm"
+        android:icon="@drawable/clock"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/search"
+        android:title="Tìm kiếm"
+        android:icon="@drawable/clock"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/shared"
+        android:title="Chia sẻ"
+        android:icon="@drawable/clock"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/setting"
+        android:title="Cài đặt"
+        android:icon="@drawable/clock"
+        app:showAsAction="collapseActionView" />
+</menu>

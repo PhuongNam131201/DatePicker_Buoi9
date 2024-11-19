@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <!-- Nội dung chính -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/bottomNavigation"
+        android:gravity="center">
+
+        <!-- TextView hiển thị tên -->
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Hiển thị"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <!-- Button để mở AlertDialog -->
+        <Button
+            android:id="@+id/btnShowDialog"
+            android:layout_marginTop="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập" />
+    </LinearLayout>
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/card_background"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!-- Icons in Bottom Navigation -->
+        <LinearLayout
+            android:id="@+id/daytime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/timetable" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:text="Time"
+                android:textColor="@color/button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/custom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/userhome" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-20dp"
+                android:text="Nhập liệu"
+                android:textColor="@color/button" />
+        </LinearLayout>
+
+        <!-- Add other items for Bottom Navigation -->
+    </LinearLayout>
+</RelativeLayout>
